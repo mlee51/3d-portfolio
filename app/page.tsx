@@ -11,8 +11,10 @@ import h from '../public/8.jpg'
 export default function Home() {
   return (
     <>
-      <h1 className="font-bold text-gray-100 text-6xl p-6">Michael Lee 3D Portfolio</h1>
-      <div className="flex flex-wrap w-full justify-center [&>*]:max-w-96 [&>*]:p-2">
+      <h1 className="font-bold text-gray-100 text-6xl p-6 select-none">Michael Lee 3D Portfolio</h1>
+      <div className="flex flex-wrap w-full justify-center [&>*]:max-w-96 gap-2">
+      <div><iframe className="rounded-lg" width="100%" height="100%" src="https://viewer.localaxis.co/"/></div>
+        <div><iframe className="rounded-lg" width="100%" height="100%" src="https://galactic.localaxis.co/"/></div>
         <div><Image className="rounded-lg" src={a} alt="a" /></div>
         <div><Image className="rounded-lg" src={b} alt="b" /></div>
         <div><Image className="rounded-lg" src={c} alt="c" /></div>
@@ -22,7 +24,7 @@ export default function Home() {
         <div><Image className="rounded-lg" src={g} alt="g" /></div>
         <div><Image className="rounded-lg" src={h} alt="h" /></div>
       </div>
-      <div className="flex flex-wrap w-full justify-center [&>*]:p-2 [&>*]:min-w-96 mb-2">
+      <div className="flex flex-wrap w-full justify-center gap-2 [&>*]:min-w-96 mb-2">
         <div className="aspect-video"><iframe className="h-full w-full" width="100%" src="https://www.youtube.com/embed/WUZVEckYZAU?si=LangxwRe1sLXqFK5" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></div>
         <div className="aspect-video"><iframe className="h-full w-full" width="100%" src="https://player.vimeo.com/video/444084452?h=2e7fbbeb15" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe></div>
         <div className="aspect-video"><iframe className="h-full w-full" width="100%" src="https://player.vimeo.com/video/414935057?h=5b8896b28d" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe></div>
